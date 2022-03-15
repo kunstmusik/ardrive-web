@@ -36,7 +36,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
-"main.dart.js": "0eea1690738e5ac6489606f12ba54d32",
+"main.dart.js": "594351c015226c2f54f4dacb985a4259",
 "avsc.min.js": "3c9ec149c019d419c131576c1679bf88",
 "favicon.png": "9a13599a830ef123989fad7c28d09cc0",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
