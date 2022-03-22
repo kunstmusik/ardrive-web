@@ -32,7 +32,7 @@ const RESOURCES = {
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "index.html": "c6c45009358fef7e3c6264ee97bb74aa",
 "/": "c6c45009358fef7e3c6264ee97bb74aa",
-"version.json": "2d5a50c70c1123f967ddae0bbb7b6520",
+"version.json": "c8d6441a7b4d6c651f8eabee20507b88",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
