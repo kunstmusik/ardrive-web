@@ -40,7 +40,7 @@ const RESOURCES = {
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
-"version.json": "6addf67e59349138c16b3fe772d606a6",
+"version.json": "00eb89ca2a1fe3d71b82a735e40d6512",
 "canvaskit/profiling/canvaskit.wasm": "a9610cf39260f60fbe7524a785c66101",
 "canvaskit/profiling/canvaskit.js": "f3bfccc993a1e0bfdd3440af60d99df4",
 "canvaskit/canvaskit.wasm": "04ed3c745ff1dee16504be01f9623498",
