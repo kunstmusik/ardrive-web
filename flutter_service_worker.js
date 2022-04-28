@@ -44,7 +44,7 @@ const RESOURCES = {
 "canvaskit/canvaskit.wasm": "04ed3c745ff1dee16504be01f9623498",
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
-"main.dart.js": "19dd3323c6b55d367ecf59f280ea5b30"
+"main.dart.js": "81a79b526a39d938269f1fa7b3b4ca73"
 };
 
 // The application shell files that are downloaded before a service worker can
