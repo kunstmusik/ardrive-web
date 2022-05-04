@@ -10,7 +10,7 @@ const RESOURCES = {
 "/": "f4344849aff35e2794b3f76af3db4419",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "favicon.png": "9a13599a830ef123989fad7c28d09cc0",
-"version.json": "00eb89ca2a1fe3d71b82a735e40d6512",
+"version.json": "99c8be82e05c181395fb589ad62f0b0c",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "avsc.min.js": "3c9ec149c019d419c131576c1679bf88",
