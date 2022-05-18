@@ -5,7 +5,7 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "favicon.png": "9a13599a830ef123989fad7c28d09cc0",
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
-"main.dart.js": "d24134614b0d8f0857d7e8313945fe80",
+"main.dart.js": "2832489e149da31827653b641d7f4d94",
 "avsc.min.js": "3c9ec149c019d419c131576c1679bf88",
 "js/tagparser.js": "d2388292e7ad7a2bb99ca0cf47e06273",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
@@ -20,7 +20,7 @@ const RESOURCES = {
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "293130157c75eed869a41f5e53c1b313",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/AssetManifest.json": "583e734794cb1c08e4b1c8d582c84c70",
-"assets/NOTICES": "d59421c08f91c5836d99db5ecc2f0cd8",
+"assets/NOTICES": "11c902a92029cbc8e0466a4718eeecd8",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/assets/fonts/OpenSans-Regular.ttf": "3ed9575dcc488c3e3a5bd66620bdf5a4",
 "assets/assets/fonts/Montserrat-Light.ttf": "409c7f79a42e56c785f50ed37535f0be",
