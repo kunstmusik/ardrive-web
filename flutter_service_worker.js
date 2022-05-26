@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "81f94391033c0d1cdea072a8a6f51482",
+  "main.dart.js": "90e0013d70c60f5b58f2f58c21de803b",
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
 "canvaskit/canvaskit.wasm": "04ed3c745ff1dee16504be01f9623498",
 "canvaskit/profiling/canvaskit.wasm": "a9610cf39260f60fbe7524a785c66101",
