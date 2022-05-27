@@ -16,7 +16,7 @@ const RESOURCES = {
 "pst.min.js": "4418d27078fa65411dbfc29f909e2ebc",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "js/tagparser.js": "d2388292e7ad7a2bb99ca0cf47e06273",
-"version.json": "00703b6f03a10dc2e30ea44d1b82d632",
+"version.json": "bd922acfcb851216a462bdbd1a6607a0",
 "assets/AssetManifest.json": "583e734794cb1c08e4b1c8d582c84c70",
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "293130157c75eed869a41f5e53c1b313",
 "assets/assets/images/profile/profile_welcome.png": "8ce2b109cbe2aa3155d501be5bc47dba",
