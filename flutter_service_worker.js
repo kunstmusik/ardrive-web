@@ -12,7 +12,7 @@ const RESOURCES = {
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
 "pst.min.js": "4418d27078fa65411dbfc29f909e2ebc",
 "main.dart.js": "476264640fddde04fbb7513730e9295f",
-"version.json": "bd922acfcb851216a462bdbd1a6607a0",
+"version.json": "5b7d32bad5666a001997ceabadc21568",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "js/tagparser.js": "d2388292e7ad7a2bb99ca0cf47e06273",
 "favicon.png": "9a13599a830ef123989fad7c28d09cc0",
