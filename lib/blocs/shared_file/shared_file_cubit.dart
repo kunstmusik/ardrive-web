@@ -28,7 +28,6 @@ class SharedFileCubit extends Cubit<SharedFileState> {
     emit(SharedFileLoadInProgress());
 
     final file = await _arweave!.getLatestFileEntityWithId(fileId!, fileKey);
-
     if (file != null) {
       emit(SharedFileLoadSuccess(file: file, fileKey: fileKey));
     } else {

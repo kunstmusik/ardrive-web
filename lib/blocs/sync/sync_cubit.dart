@@ -554,7 +554,8 @@ class SyncCubit extends Cubit<SyncState> {
 
     yield* _paginateProcess<
             DriveEntityHistory$Query$TransactionConnection$TransactionEdge>(
-        list: transactions,
+        list: transactions as List<
+            DriveEntityHistory$Query$TransactionConnection$TransactionEdge>,
         pageCount: pageCount,
         itemsPerPageCallback: (items) async* {
           print('${DateTime.now()} Getting metadata from drive ${drive.name}');
