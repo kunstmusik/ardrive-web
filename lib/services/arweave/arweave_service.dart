@@ -473,9 +473,12 @@ class ArweaveService {
     final fileOwner =
         firstOwnerQuery.data!.transactions.edges.first.node.owner.address;
 
-    final latestFileQuery = await _gql.execute(LatestFileEntityWithIdQuery(
-        variables:
-            LatestFileEntityWithIdArguments(fileId: fileId, owner: fileOwner)));
+    final latestFileQuery = await _gql.execute(AllFileEntitiesWithIdQuery(
+      variables: AllFileEntitiesWithIdArguments(
+        fileId: fileId,
+        owner: fileOwner,
+      ),
+    ));
 
     final queryEdges = latestFileQuery.data!.transactions.edges;
     if (queryEdges.isEmpty) {
@@ -498,6 +501,51 @@ class ArweaveService {
       );
       return null;
     }
+  }
+
+  Future<List<FileEntity>?> getAllFileEntitiesWithId(String fileId,
+      [SecretKey? fileKey]) async {
+    final firstOwnerQuery = await _gql.execute(FirstFileEntityWithIdOwnerQuery(
+        variables: FirstFileEntityWithIdOwnerArguments(fileId: fileId)));
+
+    if (firstOwnerQuery.data!.transactions.edges.isEmpty) {
+      return null;
+    }
+
+    final fileOwner =
+        firstOwnerQuery.data!.transactions.edges.first.node.owner.address;
+
+    final latestFileQuery = await _gql.execute(LatestFileEntityWithIdQuery(
+        variables:
+            LatestFileEntityWithIdArguments(fileId: fileId, owner: fileOwner)));
+
+    final queryEdges = latestFileQuery.data!.transactions.edges;
+    if (queryEdges.isEmpty) {
+      return null;
+    }
+    final List<FileEntity> files = [];
+
+    for (var edge in queryEdges) {
+      final fileTx = edge.node;
+      final fileDataRes = await client.api.getSandboxedTx(fileTx.id);
+
+      try {
+        final file = await FileEntity.fromTransaction(
+          fileTx,
+          fileDataRes.bodyBytes,
+          fileKey: fileKey,
+        );
+        files.add(file);
+      } on EntityTransactionParseException catch (parseException) {
+        print(
+          'Failed to parse transaction '
+          'with id ${parseException.transactionId}',
+        );
+        return null;
+      }
+    }
+
+    return files;
   }
 
   /// Returns the number of confirmations each specified transaction has as a map,
