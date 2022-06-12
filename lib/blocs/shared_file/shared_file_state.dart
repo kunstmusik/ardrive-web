@@ -14,12 +14,17 @@ class SharedFileLoadInProgress extends SharedFileState {}
 /// loaded successfully.
 class SharedFileLoadSuccess extends SharedFileState {
   final FileEntity file;
+  final List<FileEntity> revisions;
   final SecretKey? fileKey;
 
-  const SharedFileLoadSuccess({required this.file, this.fileKey});
+  const SharedFileLoadSuccess({
+    required this.revisions,
+    required this.file,
+    this.fileKey,
+  });
 
   @override
-  List<Object?> get props => [file, fileKey];
+  List<Object?> get props => [file, revisions, fileKey];
 }
 
 class SharedFileNotFound extends SharedFileState {}

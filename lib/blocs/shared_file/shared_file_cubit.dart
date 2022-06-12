@@ -27,9 +27,17 @@ class SharedFileCubit extends Cubit<SharedFileState> {
   Future<void> loadFileDetails() async {
     emit(SharedFileLoadInProgress());
 
-    final file = await _arweave!.getLatestFileEntityWithId(fileId!, fileKey);
-    if (file != null) {
-      emit(SharedFileLoadSuccess(file: file, fileKey: fileKey));
+    final fileRevisions =
+        await _arweave!.getAllFileEntitiesWithId(fileId!, fileKey);
+    if (fileRevisions != null && fileRevisions.isNotEmpty) {
+      fileRevisions.sort((a, b) => a.createdAt.compareTo(b.createdAt));
+      emit(
+        SharedFileLoadSuccess(
+          file: fileRevisions.first,
+          revisions: fileRevisions,
+          fileKey: fileKey,
+        ),
+      );
     } else {
       emit(SharedFileNotFound());
     }
