@@ -11,7 +11,7 @@ const RESOURCES = {
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
 "pst.min.js": "4418d27078fa65411dbfc29f909e2ebc",
-"main.dart.js": "e2f3f51d988de89c97f3f9b7a3b28522",
+"main.dart.js": "1ef4d449f38a516416e32af7a6d222b7",
 "version.json": "5b7d32bad5666a001997ceabadc21568",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "js/tagparser.js": "d2388292e7ad7a2bb99ca0cf47e06273",
