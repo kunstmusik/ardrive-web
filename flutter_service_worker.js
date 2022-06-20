@@ -9,7 +9,7 @@ const RESOURCES = {
 "js/tagparser.js": "d2388292e7ad7a2bb99ca0cf47e06273",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
-"version.json": "5b7d32bad5666a001997ceabadc21568",
+"version.json": "e9ce8a360be557434861ed695a6066bf",
 "index.html": "339eda9cc31979dc7ea3149c1c0bbffa",
 "/": "339eda9cc31979dc7ea3149c1c0bbffa",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
