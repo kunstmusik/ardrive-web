@@ -43,7 +43,7 @@ const RESOURCES = {
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "293130157c75eed869a41f5e53c1b313",
 "assets/NOTICES": "1ffeb720ac58ff190390fb0b8bb1e416",
 "avsc.min.js": "3c9ec149c019d419c131576c1679bf88",
-"main.dart.js": "61e1d596a5f7b299eff6c92d529f6bf5",
+"main.dart.js": "7f1305768fe00a57c921b83f00b0751a",
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065"
 };
 
