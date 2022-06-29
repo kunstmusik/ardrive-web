@@ -15,7 +15,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
-"version.json": "2a1569408cefbe54b4245da3fa33c40f",
+"version.json": "e76a2434771b4618de384884371e5f44",
 "js/tagparser.js": "d2388292e7ad7a2bb99ca0cf47e06273",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
