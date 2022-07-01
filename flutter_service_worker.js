@@ -20,7 +20,8 @@ const RESOURCES = {
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/AssetManifest.json": "583e734794cb1c08e4b1c8d582c84c70",
+"assets/AssetManifest.json": "98204f89863b2769f1ee028b7475ece2",
+"assets/assets/images/inferno/fire_icon.png": "29087f1ccf20dcb0d824e22af76b357e",
 "assets/assets/images/brand/logo-horiz-no-subtitle-light.png": "e97bd96b43d96d3d839c0ed9660bf472",
 "assets/assets/images/brand/logo-horiz-no-subtitle-dark.png": "c424b52d9789844c50efd1841f330016",
 "assets/assets/images/brand/logo-horiz-no-subtitle.png": "7f2b427acfa0012da79aa7a8251d148b",
@@ -43,7 +44,7 @@ const RESOURCES = {
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "293130157c75eed869a41f5e53c1b313",
 "assets/NOTICES": "1ffeb720ac58ff190390fb0b8bb1e416",
 "avsc.min.js": "3c9ec149c019d419c131576c1679bf88",
-"main.dart.js": "7f1305768fe00a57c921b83f00b0751a",
+"main.dart.js": "2bd31ca0446a98380166f7b27010b006",
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065"
 };
 
