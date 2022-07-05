@@ -42,9 +42,9 @@ const RESOURCES = {
 "assets/assets/config/prod.json": "3d6c5819f04179660960f51274c830aa",
 "assets/assets/config/dev.json": "3d6c5819f04179660960f51274c830aa",
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "293130157c75eed869a41f5e53c1b313",
-"assets/NOTICES": "1ffeb720ac58ff190390fb0b8bb1e416",
+"assets/NOTICES": "b473de0ae54540dfe525eee337844115",
 "avsc.min.js": "3c9ec149c019d419c131576c1679bf88",
-"main.dart.js": "6f208f918f054e20b519e0597ae329fb",
+"main.dart.js": "cebb3d0568b1696fdfb6f201cd41df88",
 "sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065"
 };
 
