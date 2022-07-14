@@ -29,7 +29,7 @@ const RESOURCES = {
 "assets/AssetManifest.json": "98204f89863b2769f1ee028b7475ece2",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"version.json": "7f12d8f04583048ec4f703c6e3b7f715",
+"version.json": "0dd3e7bbbd38ce7f1e41facac22867c7",
 "js/pst.min.js": "4418d27078fa65411dbfc29f909e2ebc",
 "js/sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
