@@ -120,19 +120,19 @@ class UploadCubit extends Cubit<UploadState> {
   }
 
   void checkFilesAboveLimit() async {
-    final tooLargeFiles = [
-      for (final file in files)
-        if (await file.ioFile.length > sizeLimit) file.ioFile.name
-    ];
+    // final tooLargeFiles = [
+    //   for (final file in files)
+    //     if (await file.ioFile.length > sizeLimit) file.ioFile.name
+    // ];
 
-    if (tooLargeFiles.isNotEmpty) {
-      emit(UploadFileTooLarge(
-        hasFilesToUpload: files.length > tooLargeFiles.length,
-        tooLargeFileNames: tooLargeFiles,
-        isPrivate: _targetDrive.isPrivate,
-      ));
-      return;
-    }
+    // if (tooLargeFiles.isNotEmpty) {
+    //   emit(UploadFileTooLarge(
+    //     hasFilesToUpload: files.length > tooLargeFiles.length,
+    //     tooLargeFileNames: tooLargeFiles,
+    //     isPrivate: _targetDrive.isPrivate,
+    //   ));
+    //   return;
+    // }
 
     // If we don't have any file above limit, we can check conflicts
     checkConflicts();

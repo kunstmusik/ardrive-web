@@ -46,6 +46,8 @@ class IOFileAdapter {
       throw EntityPathException();
     }
 
+    print(resultFilePath);
+
     File file = File(resultFilePath);
 
     final lastModified = await file.lastModified();

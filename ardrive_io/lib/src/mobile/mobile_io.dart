@@ -114,9 +114,9 @@ class IOSFileSaver implements FileSaver {
 
 abstract class FileSaver {
   factory FileSaver() {
-    if (Platform.isAndroid) {
-      return AndroidSelectableFolderFileSaver();
-    }
+    // if (Platform.isAndroid) {
+    return AndroidSelectableFolderFileSaver();
+    // }
     if (Platform.isIOS) {
       return IOSFileSaver();
     }
