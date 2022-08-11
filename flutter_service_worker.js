@@ -12,7 +12,7 @@ const RESOURCES = {
 "favicon.png": "9a13599a830ef123989fad7c28d09cc0",
 "main.dart.js": "c7525bfc5aa60bce3ce12709e5618efd",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
-"version.json": "6c2d9d51de2661844a1bb9c7baf4fc53",
+"version.json": "9ef11bc7de6a4bdfb200cd01c2b0c965",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
