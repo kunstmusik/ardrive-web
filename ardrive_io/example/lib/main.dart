@@ -1,6 +1,8 @@
+import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:ardrive_io/ardrive_io.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,13 +34,67 @@ class _ArDriveIOExampleState extends State<ArDriveIOExample> {
   IOFolder? currentFolder;
   ArDriveIO arDriveIO = ArDriveIO();
 
+  Future<IOFile> selectFileSource(BuildContext context) async {
+    final io = ArDriveIO();
+    late IOFile file;
+    await showModalBottomSheet(
+        context: context,
+        builder: (context) {
+          return SizedBox(
+            height: 240,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                // ListTile(
+                //   onTap: () async {
+                //     files.addAll(await io.pickFiles(fileSource: FileSource.camera));
+                //     Navigator.pop(context);
+                //   },
+                //   title: Text('Camera'),
+                //   leading: Icon(Icons.camera),
+                // ),
+                const SizedBox(
+                  height: 8,
+                ),
+                ListTile(
+                  onTap: () async {
+                    file = await io.pickFile(fileSource: FileSource.gallery);
+                    Navigator.pop(context);
+                  },
+                  title: const Text('Gallery'),
+                  leading: const Icon(Icons.image),
+                ),
+                const SizedBox(
+                  height: 8,
+                ),
+                ListTile(
+                    onTap: () async {
+                      file =
+                          await io.pickFile(fileSource: FileSource.fileSystem);
+
+                      Navigator.pop(context);
+                    },
+                    title: Text('Files'),
+                    leading: Icon(Icons.file_open_sharp))
+              ],
+            ),
+          );
+        });
+    return file;
+  }
+
   Future<void> pickFile() async {
-    final file = await arDriveIO.pickFile();
+    late IOFile file;
+
+    if (Platform.isAndroid || Platform.isIOS) {
+      file = await selectFileSource(context);
+    } else {
+      file = await arDriveIO.pickFile(fileSource: FileSource.fileSystem);
+    }
 
     setState(() {
       currentFile = file;
       fileDescription = null;
-      print(currentFile.toString());
       currentFolder = null;
     });
   }
