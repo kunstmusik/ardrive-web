@@ -13,8 +13,10 @@ import 'web/stub_web_io.dart' // Stub implementation
 /// Opens the platform specific file picker to pick files and folders, and save files using
 /// the `IOFile` and `IOFolder` APIs.
 abstract class ArDriveIO {
-  Future<IOFile> pickFile({List<String>? allowedExtensions});
-  Future<List<IOFile>> pickFiles({List<String>? allowedExtensions});
+  Future<IOFile> pickFile(
+      {List<String>? allowedExtensions, required FileSource fileSource});
+  Future<List<IOFile>> pickFiles(
+      {List<String>? allowedExtensions, required FileSource fileSource});
   Future<IOFolder> pickFolder();
   Future<void> saveFile(IOFile file);
 
@@ -25,10 +27,11 @@ abstract class ArDriveIO {
           folderAdapter: IOFolderAdapter(),
           folderPicker: FolderPicker());
     }
-
+    final adapter = IOFileAdapter();
     return MobileIO(
+        fileProviderFactory: MobileFileProviderFactory(adapter),
         fileSaver: FileSaver(),
-        fileAdapter: IOFileAdapter(),
+        fileAdapter: adapter,
         folderAdapter: IOFolderAdapter());
   }
 }

@@ -8,6 +8,7 @@ import 'package:ardrive_io/src/utils/mime_type_utils.dart';
 import 'package:ardrive_io/src/utils/path_utils.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:file_selector/file_selector.dart';
+import 'package:image_picker/image_picker.dart';
 
 import 'io_entity.dart';
 
@@ -83,6 +84,20 @@ class IOFileAdapter {
       xfile,
       name: xfile.name,
       path: xfile.path,
+      contentType: contentType,
+      lastModifiedDate: lastModified,
+    );
+  }
+
+  Future<IOFile> fromXFile(XFile file) async {
+    final lastModified = await file.lastModified();
+    final contentType = lookupMimeTypeWithDefaultType(file.path);
+    File _file = File(file.path);
+
+    return _IOFile(
+      _file,
+      name: getBasenameFromPath(file.path),
+      path: file.path,
       contentType: contentType,
       lastModifiedDate: lastModified,
     );

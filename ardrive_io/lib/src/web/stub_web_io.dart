@@ -9,13 +9,17 @@ class WebIO implements ArDriveIO {
       required IOFolderAdapter folderAdapter});
 
   @override
-  Future<IOFile> pickFile({List<String>? allowedExtensions}) {
+  Future<IOFile> pickFile(
+      {List<String>? allowedExtensions,
+      FileSource fileSource = FileSource.fileSystem}) {
     // TODO: implement pickFile
     throw UnimplementedError();
   }
 
   @override
-  Future<List<IOFile>> pickFiles({List<String>? allowedExtensions}) {
+  Future<List<IOFile>> pickFiles(
+      {List<String>? allowedExtensions,
+      FileSource fileSource = FileSource.fileSystem}) {
     // TODO: implement pickFiles
     throw UnimplementedError();
   }
