@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 
@@ -8,6 +7,8 @@ import 'io_exception.dart';
 import 'io_file.dart';
 import 'io_folder.dart';
 import 'mobile/mobile_io.dart';
+import 'web/stub_web_io.dart' // Stub implementation
+    if (dart.library.html) 'web/web_io.dart';
 
 /// API for I/O operations
 ///
@@ -23,8 +24,10 @@ abstract class ArDriveIO {
 
   factory ArDriveIO() {
     if (kIsWeb) {
-      throw UnsupportedPlatformException(
-          'The ${Platform.operatingSystem} platform is not supported.');
+      return WebIO(
+          fileAdapter: IOFileAdapter(),
+          folderAdapter: IOFolderAdapter(),
+          folderPicker: FolderPicker());
     }
     final adapter = IOFileAdapter();
     return MobileIO(
