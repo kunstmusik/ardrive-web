@@ -25,7 +25,13 @@ class WebIO implements ArDriveIO {
   final FolderPicker _folderPicker;
 
   @override
-  Future<IOFile> pickFile({List<String>? allowedExtensions}) async {
+  Future<IOFile> pickFile(
+      {List<String>? allowedExtensions,
+      FileSource fileSource = FileSource.fileSystem}) async {
+    if (fileSource != FileSource.fileSystem) {
+      throw UnsupportedPlatformException();
+    }
+
     final file = await file_selector.openFile(acceptedTypeGroups: [
       file_selector.XTypeGroup(extensions: allowedExtensions)
     ]);
@@ -38,7 +44,13 @@ class WebIO implements ArDriveIO {
   }
 
   @override
-  Future<List<IOFile>> pickFiles({List<String>? allowedExtensions}) async {
+  Future<List<IOFile>> pickFiles(
+      {List<String>? allowedExtensions,
+      FileSource fileSource = FileSource.fileSystem}) async {
+    if (fileSource != FileSource.fileSystem) {
+      throw UnsupportedPlatformException();
+    }
+
     final xFiles = await file_selector.openFiles(acceptedTypeGroups: [
       file_selector.XTypeGroup(extensions: allowedExtensions)
     ]);
