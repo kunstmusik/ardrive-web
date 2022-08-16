@@ -68,7 +68,7 @@ dev_dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/images/brand/logo.png"
+  image_path: "assets/images/brand/launch_icon.png"
 
 dependency_overrides:
   meta: 1.7.0
