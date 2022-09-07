@@ -12,6 +12,7 @@ import 'package:ardrive/services/analytics/ardrive_analytics.dart';
 import 'package:ardrive/services/analytics/compound_adrive_analytics.dart';
 import 'package:ardrive/services/analytics/firebase_ardrive_analytics.dart';
 import 'package:ardrive/services/analytics/logger_ardrive_analytics.dart';
+import 'package:ardrive/services/analytics/matomo_ardrive_analytics.dart';
 import 'package:ardrive/services/analytics/pendo_analytics.dart';
 import 'package:ardrive/utils/html/html_util.dart';
 import 'package:ardrive/utils/local_key_value_store.dart';
@@ -24,6 +25,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_portal/flutter_portal.dart';
+import 'package:matomo_tracker/matomo_tracker.dart';
 import 'package:pendo_sdk/pendo_sdk.dart';
 
 import 'blocs/blocs.dart';
@@ -58,6 +60,11 @@ void main() async {
 
     await PendoFlutterPlugin.setup(pendoKey);
   }
+
+  await MatomoTracker.instance.initialize(
+    siteId: 1,
+    url: 'https://matomo.pesso.al/matomo.php',
+  );
 
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -103,6 +110,7 @@ class AppState extends State<App> {
               create: (context) => context.read<Database>().driveDao),
           RepositoryProvider<ArDriveAnalytics>(
               create: (_) => CompoundArDriveAnalytics([
+                    MatomoArDriveAnalytics(),
                     FirebaseArDriveAnalytics(),
                     LoggerArDriveAnalytics(),
                     kIsWeb
