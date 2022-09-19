@@ -1,7 +1,5 @@
 @Tags(['broken'])
 
-import 'dart:convert';
-
 import 'package:ardrive/blocs/blocs.dart';
 import 'package:ardrive/entities/profile_types.dart';
 import 'package:ardrive/models/models.dart';
@@ -58,7 +56,7 @@ void main() {
       'add profile for new user',
       build: () => profileAddCubit,
       act: (bloc) async {
-        await bloc.pickWallet(json.encode(newUserWallet.toJwk()));
+        await bloc.pickWallet(newUserWallet);
         bloc.form.value = {'username': 'Bobby', 'password': fakePassword};
         await bloc.submit();
       },

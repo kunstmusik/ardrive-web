@@ -1,9 +1,6 @@
-@Tags(['broken'])
-
 import 'package:ardrive/blocs/blocs.dart';
 import 'package:ardrive/models/models.dart';
 import 'package:ardrive/services/services.dart';
-import 'package:ardrive/utils/local_key_value_store.dart';
 import 'package:arweave/arweave.dart';
 import 'package:bloc_test/bloc_test.dart';
 import 'package:mocktail/mocktail.dart';
@@ -21,28 +18,44 @@ void main() {
     late ProfileCubit profileCubit;
     late FolderCreateCubit folderCreateCubit;
 
+    const driveId = 'drive-id';
+    const rootFolderId = 'root-folder-id';
+    const rootFolderFileCount = 5;
+
+    const nestedFolderId = 'nested-folder-id';
+    const nestedFolderFileCount = 5;
+
+    const emptyNestedFolderIdPrefix = 'empty-nested-folder-id';
+    const emptyNestedFolderCount = 5;
+
+    const testGatewayURL = 'https://arweave.net';
+
     setUp(() async {
       registerFallbackValue(ProfileStateFake());
 
       db = getTestDb();
       driveDao = db.driveDao;
 
-      final configService = ConfigService();
-      final config = await configService.getConfig(
-        localStore: await LocalKeyValueStore.getInstance(),
+      await addTestFilesToDb(
+        db,
+        driveId: driveId,
+        emptyNestedFolderCount: emptyNestedFolderCount,
+        emptyNestedFolderIdPrefix: emptyNestedFolderIdPrefix,
+        rootFolderId: rootFolderId,
+        rootFolderFileCount: rootFolderFileCount,
+        nestedFolderId: nestedFolderId,
+        nestedFolderFileCount: nestedFolderFileCount,
       );
 
-      arweave = ArweaveService(
-          Arweave(gatewayUrl: Uri.parse(config.defaultArweaveGatewayUrl!)));
+      arweave = ArweaveService(Arweave(gatewayUrl: Uri.parse(testGatewayURL)));
       profileCubit = MockProfileCubit();
 
       folderCreateCubit = FolderCreateCubit(
         arweave: arweave,
         driveDao: driveDao,
         profileCubit: profileCubit,
-        //TODO Mock or supply a driveId or parentFolderId
-        driveId: '',
-        parentFolderId: '',
+        driveId: driveId,
+        parentFolderId: nestedFolderId,
       );
     });
 

@@ -1,5 +1,3 @@
-@Tags(['broken'])
-
 import 'dart:convert';
 import 'dart:typed_data';
 
@@ -101,6 +99,10 @@ void main() {
         drivesBloc: drivesBloc,
         profileKey: profileKey,
       );
+    });
+
+    tearDown(() async {
+      await db.close();
     });
 
     blocTest<DriveAttachCubit, DriveAttachState>(
