@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "favicon.png": "9a13599a830ef123989fad7c28d09cc0",
-"main.dart.js": "78644f582a7a4f5a662ce4fcdfac9945",
+"main.dart.js": "7f7be054d8bfe806508ee5cb3ce4f0bb",
 "index.html": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "/": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "js/sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
@@ -42,7 +42,7 @@ const RESOURCES = {
 "assets/assets/fonts/OpenSans-Regular.ttf": "3ed9575dcc488c3e3a5bd66620bdf5a4",
 "assets/assets/fonts/Montserrat-Light.ttf": "409c7f79a42e56c785f50ed37535f0be",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/NOTICES": "8367cd4e2c35330168517a86d89bbff8",
+"assets/NOTICES": "9e2f77542dfa6535f7d6ae825fb63607",
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
 "version.json": "fbc04e165b085f69a5f0495e79af7304",
 "sqlite3.wasm": "fbf9815a14460df0b4ee8b746ae9b95b",
