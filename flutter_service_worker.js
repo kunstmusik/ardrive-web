@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "favicon.png": "9a13599a830ef123989fad7c28d09cc0",
-"main.dart.js": "ce872ab833a9745cabeffc8d44054675",
+"main.dart.js": "d8049627e8b63def4738fe01d3369426",
 "index.html": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "/": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "js/sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
@@ -24,7 +24,7 @@ const RESOURCES = {
 "assets/assets/images/inferno/fire_icon.png": "29087f1ccf20dcb0d824e22af76b357e",
 "assets/assets/images/brand/logo-horiz-no-subtitle-dark.png": "c424b52d9789844c50efd1841f330016",
 "assets/assets/images/brand/logo-vert-no-subtitle.png": "181c34ae51c6053ba9dc18035aac2399",
-"assets/assets/images/brand/launch_icon.png": "7649d270bbc96974c9ee8f903ecb9769",
+"assets/assets/images/brand/launch_icon.png": "8d40188cdbfdbe3e48686a7eaa8a78de",
 "assets/assets/images/brand/logo-horiz-no-subtitle.png": "7f2b427acfa0012da79aa7a8251d148b",
 "assets/assets/images/brand/logo-horiz-no-subtitle-light.png": "e97bd96b43d96d3d839c0ed9660bf472",
 "assets/assets/images/profile/profile_new_user_permanent.png": "19cef59765533319b5ab58d665200762",
@@ -42,7 +42,7 @@ const RESOURCES = {
 "assets/assets/fonts/OpenSans-Regular.ttf": "3ed9575dcc488c3e3a5bd66620bdf5a4",
 "assets/assets/fonts/Montserrat-Light.ttf": "409c7f79a42e56c785f50ed37535f0be",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/NOTICES": "41e3c9f9292d901629ae4437a04b71b3",
+"assets/NOTICES": "0f48dc28cb6fef371ab8bb2d33bb4528",
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
 "version.json": "fbc04e165b085f69a5f0495e79af7304",
 "sqlite3.wasm": "fbf9815a14460df0b4ee8b746ae9b95b",
