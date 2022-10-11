@@ -42,7 +42,7 @@ const RESOURCES = {
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/NOTICES": "4c3feb2c56a7d5af34aa2dd94767a6e8",
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
-"version.json": "72d24c8e2a957fda39461122cbcf3a15",
+"version.json": "09480f512df51e29ab86d5be955c328b",
 "sqlite3.wasm": "fbf9815a14460df0b4ee8b746ae9b95b",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e"
