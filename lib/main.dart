@@ -35,6 +35,10 @@ import 'pages/pages.dart';
 import 'services/services.dart';
 import 'theme/theme.dart';
 
+List<IOFile> pendingFilesToUpload = [];
+
+String shareDriveId = '';
+
 late ConfigService configService;
 late AppConfig config;
 late ArweaveService arweave;
@@ -120,6 +124,11 @@ class App extends StatefulWidget {
 class AppState extends State<App> {
   final AppRouterDelegate _routerDelegate = AppRouterDelegate();
   final _routeInformationParser = AppRouteInformationParser();
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) => MultiRepositoryProvider(

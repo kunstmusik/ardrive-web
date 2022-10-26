@@ -5,6 +5,7 @@ import 'package:ardrive/blocs/feedback_survey/feedback_survey_cubit.dart';
 import 'package:ardrive/components/components.dart';
 import 'package:ardrive/components/feedback_survey.dart';
 import 'package:ardrive/entities/constants.dart';
+import 'package:ardrive/main.dart';
 import 'package:ardrive/models/models.dart';
 import 'package:ardrive/pages/pages.dart';
 import 'package:ardrive/services/services.dart';
@@ -12,6 +13,8 @@ import 'package:ardrive/utils/app_localizations_wrapper.dart';
 import 'package:cryptography/cryptography.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+bool verifiedSharedFiles = false;
 
 class AppRouterDelegate extends RouterDelegate<AppRoutePath>
     with ChangeNotifier, PopNavigatorRouterDelegateMixin<AppRoutePath> {
@@ -80,6 +83,7 @@ class AppRouterDelegate extends RouterDelegate<AppRoutePath>
           // Redirect the user away from sign in if they are already signed in.
           if (signingIn && state is ProfileLoggedIn) {
             signingIn = false;
+
             notifyListeners();
           }
           // Cleans up any shared drives from previous sessions
@@ -93,6 +97,7 @@ class AppRouterDelegate extends RouterDelegate<AppRoutePath>
           }
         },
         builder: (context, state) {
+          print('buidling');
           Widget? shell;
 
           final anonymouslyShowDriveDetail =
@@ -119,6 +124,18 @@ class AppRouterDelegate extends RouterDelegate<AppRoutePath>
                   }
 
                   driveId = state.selectedDriveId;
+
+                  shareDriveId = driveId!;
+
+                  if (pendingFilesToUpload.isNotEmpty && !verifiedSharedFiles) {
+                    debugPrint(pendingFilesToUpload.length.toString());
+                    promptToUpload(context,
+                        driveId: driveId!,
+                        files: pendingFilesToUpload,
+                        parentFolderId: 'folder id',
+                        isFolderUpload: false);
+                    verifiedSharedFiles = true;
+                  }
                   notifyListeners();
                 }
               },

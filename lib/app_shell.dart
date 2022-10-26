@@ -1,7 +1,12 @@
+import 'dart:io';
+
+import 'package:ardrive/main.dart';
 import 'package:ardrive/utils/html/html_util.dart';
+import 'package:ardrive_io/ardrive_io.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_portal/flutter_portal.dart';
+import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import 'blocs/blocs.dart';
@@ -25,6 +30,42 @@ class AppShell extends StatefulWidget {
 class AppShellState extends State<AppShell> {
   bool _showProfileOverlay = false;
   bool _showWalletSwitchDialog = true;
+
+  @override
+  void initState() {
+    super.initState();
+    ReceiveSharingIntent.getMediaStream().listen(
+        (List<SharedMediaFile> value) async {
+      print('adding file');
+      List<String> filePaths = [];
+      for (var sharedMediaFile in value) {
+        final file = File(sharedMediaFile.path);
+
+        final ioFile = await IOFile.fromData(file.readAsBytesSync(),
+            name: file.path, lastModifiedDate: file.statSync().modified);
+
+        pendingFilesToUpload.add(ioFile);
+
+        final state =
+            (context.read<DriveDetailCubit>().state as DriveDetailLoadSuccess);
+
+        promptToUpload(
+          context,
+          driveId: state.currentDrive.id,
+          files: pendingFilesToUpload,
+          parentFolderId: state.folderInView.folder.id,
+          isFolderUpload: false,
+        );
+
+        debugPrint(pendingFilesToUpload.length.toString());
+      }
+
+      if (filePaths.isNotEmpty) {}
+    }, onError: (err) {
+      print('getIntentDataStream error: $err');
+    });
+  }
+
   @override
   Widget build(BuildContext context) => BlocBuilder<DrivesCubit, DrivesState>(
         builder: (context, state) {

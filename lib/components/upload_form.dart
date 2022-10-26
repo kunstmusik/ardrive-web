@@ -22,32 +22,42 @@ Future<void> promptToUpload(
   required String driveId,
   required String parentFolderId,
   required bool isFolderUpload,
+  List<IOFile>? files,
 }) async {
   final selectedFiles = <UploadFile>[];
-  final io = ArDriveIO();
-  if (isFolderUpload) {
-    final ioFolder = await io.pickFolder();
-    final ioFiles = await ioFolder.listFiles();
-    final uploadFiles = ioFiles.map((file) {
-      return UploadFile(
-        ioFile: file,
-        parentFolderId: parentFolderId,
-        relativeTo: ioFolder.path.isEmpty ? null : getDirname(ioFolder.path),
-      );
-    }).toList();
-    selectedFiles.addAll(uploadFiles);
+
+  if (files == null) {
+    final io = ArDriveIO();
+    if (isFolderUpload) {
+      final ioFolder = await io.pickFolder();
+      final ioFiles = await ioFolder.listFiles();
+      final uploadFiles = ioFiles.map((file) {
+        return UploadFile(
+          ioFile: file,
+          parentFolderId: parentFolderId,
+          relativeTo: ioFolder.path.isEmpty ? null : getDirname(ioFolder.path),
+        );
+      }).toList();
+      selectedFiles.addAll(uploadFiles);
+    } else {
+      // Display multiple options on Mobile
+      // Open file picker on Web
+      final ioFiles = kIsWeb
+          ? await io.pickFiles(fileSource: FileSource.fileSystem)
+          : await showMultipleFilesFilePickerModal(context);
+
+      final uploadFiles = ioFiles
+          .map((file) =>
+              UploadFile(ioFile: file, parentFolderId: parentFolderId))
+          .toList();
+
+      selectedFiles.addAll(uploadFiles);
+    }
   } else {
-    // Display multiple options on Mobile
-    // Open file picker on Web
-    final ioFiles = kIsWeb
-        ? await io.pickFiles(fileSource: FileSource.fileSystem)
-        : await showMultipleFilesFilePickerModal(context);
-
-    final uploadFiles = ioFiles
+    debugPrint(files.length.toString());
+    selectedFiles.addAll(files
         .map((file) => UploadFile(ioFile: file, parentFolderId: parentFolderId))
-        .toList();
-
-    selectedFiles.addAll(uploadFiles);
+        .toList());
   }
 
   // ignore: use_build_context_synchronously
