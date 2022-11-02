@@ -59729,7 +59729,7 @@ A.akT.prototype={
 $0(){return A.T(this.a,!1,t.jw).F3(this.b.a)},
 $S:0}
 A.akY.prototype={
-$0(){return A.iE("https://ardrive.zendesk.com/",null)},
+$0(){return A.iE("https://ar-io.zendesk.com/hc/en-us",null)},
 $S:0}
 A.akZ.prototype={
 $0(){var s="https://ardrive.io/inferno/",r=A.q(this.a),q=t.N,p=A.G(["zh","https://cn.ardrive.io/inferno/","en",s],q,q).i(0,r.a)
@@ -60160,7 +60160,7 @@ A.av1.prototype={
 $0(){var s=0,r=A.l(t.H),q=this
 var $async$$0=A.h(function(a,b){if(a===1)return A.i(b,r)
 while(true)switch(s){case 0:s=2
-return A.d(A.iE("https://ardrive.typeform.com/UserSurvey",null),$async$$0)
+return A.d(A.iE("https://ar-io.typeform.com/UserSurvey",null),$async$$0)
 case 2:A.T(q.a,!1,t.AA).Cb()
 return A.j(null,r)}})
 return A.k($async$$0,r)},
@@ -60735,10 +60735,10 @@ $0(){A.fx().$1("close profile overlay")
 this.a.c.$0()},
 $S:2}
 A.aGr.prototype={
-$0(){return A.iE("https://ardrive.typeform.com/UserSurvey",null)},
+$0(){return A.iE("https://ar-io.typeform.com/UserSurvey",null)},
 $S:0}
 A.aGs.prototype={
-$0(){return A.iE("https://ardrive.typeform.com/UserSurvey",null)},
+$0(){return A.iE("https://ar-io.typeform.com/UserSurvey",null)},
 $S:0}
 A.aGt.prototype={
 $0(){return A.iE("/","_self")},
