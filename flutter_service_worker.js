@@ -15,7 +15,7 @@ const RESOURCES = {
 "/": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "sqlite3.wasm": "fbf9815a14460df0b4ee8b746ae9b95b",
-"main.dart.js": "76fb7f5f663c62088611a6d10023f2c4",
+"main.dart.js": "8c989e20d30575db88ad1a99db0d63c5",
 "assets/AssetManifest.json": "f5033e81ecc8a17dcde4617b104dace3",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/NOTICES": "a5981098cc94fde03bd1a74a8d077a5e",
