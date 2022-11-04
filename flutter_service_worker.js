@@ -5,20 +5,20 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "64709f539f9462e914be420dc3898c48",
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
-"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
-"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
-"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
+"canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
+"canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
+"canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
+"canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
 "favicon.png": "167c77d2168cfdb31c240d2d3d5e9601",
-"flutter.js": "eb2682e33f25cd8f1fc59011497c35f8",
+"flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "index.html": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "/": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "sqlite3.wasm": "fbf9815a14460df0b4ee8b746ae9b95b",
-"main.dart.js": "8c989e20d30575db88ad1a99db0d63c5",
+"main.dart.js": "bb98383c5af9e5c77869144356b76e09",
 "assets/AssetManifest.json": "f5033e81ecc8a17dcde4617b104dace3",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
-"assets/NOTICES": "a5981098cc94fde03bd1a74a8d077a5e",
+"assets/NOTICES": "c3312a3f1c16612bdd4020bb282aca86",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/assets/images/brand/ArDrive-Logo-Wordmark-Dark.png": "1a5609738e95b5ebe84e8165f1ad46c8",
 "assets/assets/images/brand/ArDrive-Logo-Wordmark-Light.png": "b11193d644585ac01361cfdce7b6b9cb",
@@ -41,6 +41,7 @@ const RESOURCES = {
 "assets/assets/fonts/Montserrat-Light.ttf": "409c7f79a42e56c785f50ed37535f0be",
 "assets/assets/fonts/OpenSans-Bold.ttf": "1025a6e0fb0fa86f17f57cc82a6b9756",
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "0266ef445553f45f6e45344556cfd6fd",
+"assets/shaders/ink_sparkle.frag": "e35b6596de523db6d8ed141b1569cb7a",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
@@ -53,7 +54,6 @@ const RESOURCES = {
 const CORE = [
   "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -152,9 +152,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
