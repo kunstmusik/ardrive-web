@@ -44,11 +44,11 @@ const RESOURCES = {
 "index.html": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "/": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "ardrive-network.js": "c7b5d22c473058ad23e36742ae0749e4",
-"version.json": "0abc55206121e5f69931b5dfec4e72cf",
+"version.json": "c12ab27f876784b4b834a7c35a7caff6",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
-"main.dart.js": "725dd05ba5b26396d62bdf0938ed53f3"
+"main.dart.js": "580a27889e1dbd43fb2939be6d76769d"
 };
 
 // The application shell files that are downloaded before a service worker can
