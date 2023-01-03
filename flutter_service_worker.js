@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "worker.js": "f916974921b8b3d98f9fdfc4b68e5432",
-"main.dart.js": "86b3639504c0ce1f8e8470c2ada6c51b",
+"main.dart.js": "ed159ec4994c95ef666035b4a5216900",
 "canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
 "canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
 "canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
@@ -42,7 +42,7 @@ const RESOURCES = {
 "assets/assets/fonts/OpenSans-Regular.ttf": "3ed9575dcc488c3e3a5bd66620bdf5a4",
 "assets/assets/fonts/Montserrat-Light.ttf": "409c7f79a42e56c785f50ed37535f0be",
 "assets/assets/fonts/OpenSans-Bold.ttf": "1025a6e0fb0fa86f17f57cc82a6b9756",
-"assets/NOTICES": "7174c967fbfe3f8706e19ff859b34824",
+"assets/NOTICES": "f45162a4a3d4996fcdbdd908af69dfb2",
 "index.html": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "/": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
