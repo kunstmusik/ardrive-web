@@ -48,7 +48,7 @@ const RESOURCES = {
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
 "ardrive-http.js": "50b098c54272cffcc95c1631134ecd64",
 "favicon.png": "167c77d2168cfdb31c240d2d3d5e9601",
-"version.json": "37d3815f294ff447b8a1d6c7d7cc5021"
+"version.json": "1531f84dd32182bf087e8279ec8d66e9"
 };
 
 // The application shell files that are downloaded before a service worker can
