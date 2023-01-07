@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "worker.js": "f916974921b8b3d98f9fdfc4b68e5432",
-"main.dart.js": "4069be31586c7ae827414c0304b38bb0",
+"main.dart.js": "3af3b6f75264b758efadf6b1732698f3",
 "canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
 "canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
 "canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
@@ -42,13 +42,13 @@ const RESOURCES = {
 "assets/assets/fonts/OpenSans-Regular.ttf": "3ed9575dcc488c3e3a5bd66620bdf5a4",
 "assets/assets/fonts/Montserrat-Light.ttf": "409c7f79a42e56c785f50ed37535f0be",
 "assets/assets/fonts/OpenSans-Bold.ttf": "1025a6e0fb0fa86f17f57cc82a6b9756",
-"assets/NOTICES": "f45162a4a3d4996fcdbdd908af69dfb2",
+"assets/NOTICES": "8edc47b31e11d6b00bc36f07900bf20b",
 "index.html": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "/": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
-"ardrive-http.js": "50b098c54272cffcc95c1631134ecd64",
+"ardrive-http.js": "0b50ed9f28bbaaabe4519526b881f902",
 "favicon.png": "167c77d2168cfdb31c240d2d3d5e9601",
-"version.json": "1531f84dd32182bf087e8279ec8d66e9"
+"version.json": "bc11f1256871768e2707206b0632ddc4"
 };
 
 // The application shell files that are downloaded before a service worker can
