@@ -9,7 +9,7 @@ const RESOURCES = {
 "index.html": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "/": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "sqlite3.wasm": "fbf9815a14460df0b4ee8b746ae9b95b",
-"main.dart.js": "3d495d59039d7d7b74636b08b4d0f905",
+"main.dart.js": "619dcbb7f4f373a39aab843d9515bc3f",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "ardrive-http.js": "0b50ed9f28bbaaabe4519526b881f902",
 "favicon.png": "167c77d2168cfdb31c240d2d3d5e9601",
@@ -48,7 +48,7 @@ const RESOURCES = {
 "js/pst.min.js": "353b22b2121953178e78dfe6bce00b6d",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "js/sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
-"version.json": "52321b5a0487cf8ed9d0820b52074af2"
+"version.json": "62f5d83c302a68c14721fac899064db7"
 };
 
 // The application shell files that are downloaded before a service worker can
