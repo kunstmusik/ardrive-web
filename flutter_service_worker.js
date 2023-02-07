@@ -19,7 +19,7 @@ const RESOURCES = {
 "assets/NOTICES": "8edc47b31e11d6b00bc36f07900bf20b",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/shaders/ink_sparkle.frag": "83c076d55fdbf5e6f73f29c79926992c",
-"assets/assets/config/prod.json": "6c8b43a96b94c483c4b008c481ff8b6b",
+"assets/assets/config/prod.json": "31ffab092642044004b5bb5f45c2ce7e",
 "assets/assets/config/dev.json": "7626ad3ca43e92fb0d13ee938f1b2899",
 "assets/assets/images/inferno/fire_icon.png": "29087f1ccf20dcb0d824e22af76b357e",
 "assets/assets/images/brand/ArDrive-Logo-Wordmark-Dark.png": "1a5609738e95b5ebe84e8165f1ad46c8",
