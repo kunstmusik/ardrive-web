@@ -9,7 +9,7 @@ const RESOURCES = {
 "index.html": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "/": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "sqlite3.wasm": "fbf9815a14460df0b4ee8b746ae9b95b",
-"main.dart.js": "83a7a10528c34ef898b191a4df329f9a",
+"main.dart.js": "08ccc3df854680a16e43c4e4f650518e",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "ardrive-http.js": "af25877f52aee9ad7c24422efc556091",
 "favicon.png": "167c77d2168cfdb31c240d2d3d5e9601",
