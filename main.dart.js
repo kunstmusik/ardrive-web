@@ -70912,30 +70912,30 @@ A.arS.prototype={
 Fk(a){return this.adw(a)},
 adw(a){var s=0,r=A.k(t.ne),q,p=this,o,n,m,l,k,j,i,h,g
 var $async$Fk=A.f(function(b,c){if(b===1)return A.h(c,r)
-while(true)switch(s){case 0:g=p.a
-s=g==null?3:4
+while(true)switch(s){case 0:h=p.a
+s=h==null?3:4
 break
-case 3:s=5
+case 3:g=B.D
+s=5
 return A.c($.u1().aae("assets/config/prod.json"),$async$Fk)
-case 5:o=c
-g=$.rD
-if(g==null)A.N(A.bP(u.w))
-n=A.cM(J.aj(g.a,"arweaveGatewayUrl"))
-g=$.rD
-if(g==null)A.N(A.bP(u.w))
-m=A.lZ(J.aj(g.a,"enableQuickSyncAuthoring"))
-g=B.D.bH(0,o)
-l=J.ah(g)
-k=A.cM(l.i(g,"defaultArweaveGatewayUrl"))
-j=A.lZ(l.i(g,"useTurbo"))
-i=A.cM(l.i(g,"defaultTurboUrl"))
-h=A.hy(l.i(g,"allowedDataItemSizeForTurbo"))
-g=A.lZ(l.i(g,"enableQuickSyncAuthoring"))
-g=g===!0
-l=n==null?k:n
-g=m==null?g:m
-g=p.a=new A.C0(l,j===!0,i,h,g)
-case 4:q=g
+case 5:h=g.bH(0,c)
+o=J.ah(h)
+n=A.cM(o.i(h,"defaultArweaveGatewayUrl"))
+m=A.lZ(o.i(h,"useTurbo"))
+l=A.cM(o.i(h,"defaultTurboUrl"))
+k=A.hy(o.i(h,"allowedDataItemSizeForTurbo"))
+h=A.lZ(o.i(h,"enableQuickSyncAuthoring"))
+h=h===!0
+o=$.rD
+if(o==null)A.N(A.bP(u.w))
+j=A.cM(J.aj(o.a,"arweaveGatewayUrl"))
+o=$.rD
+if(o==null)A.N(A.bP(u.w))
+i=A.lZ(J.aj(o.a,"enableQuickSyncAuthoring"))
+o=j==null?n:j
+h=i==null?h:i
+h=p.a=new A.C0(o,m===!0,l,k,h)
+case 4:q=h
 s=1
 break
 case 1:return A.i(q,r)}})
