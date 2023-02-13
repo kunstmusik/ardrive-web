@@ -48,7 +48,7 @@ const RESOURCES = {
 "js/pst.min.js": "353b22b2121953178e78dfe6bce00b6d",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "js/sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
-"version.json": "62f5d83c302a68c14721fac899064db7"
+"version.json": "1531f84dd32182bf087e8279ec8d66e9"
 };
 
 // The application shell files that are downloaded before a service worker can
