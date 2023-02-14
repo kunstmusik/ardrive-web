@@ -19,7 +19,7 @@ const RESOURCES = {
 "assets/NOTICES": "8edc47b31e11d6b00bc36f07900bf20b",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/shaders/ink_sparkle.frag": "83c076d55fdbf5e6f73f29c79926992c",
-"assets/assets/config/prod.json": "51999088b7a5114438a6362d32fbcf8f",
+"assets/assets/config/prod.json": "636e225568eb89f362d1a75706626eb3",
 "assets/assets/config/dev.json": "b00bec42e67a4d0af6a38f57fe2e9eee",
 "assets/assets/images/inferno/fire_icon.png": "29087f1ccf20dcb0d824e22af76b357e",
 "assets/assets/images/brand/ArDrive-Logo-Wordmark-Dark.png": "1a5609738e95b5ebe84e8165f1ad46c8",
@@ -48,7 +48,7 @@ const RESOURCES = {
 "js/pst.min.js": "353b22b2121953178e78dfe6bce00b6d",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "js/sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
-"version.json": "89d7c7693339989fa9f96532a7ab19be"
+"version.json": "1531f84dd32182bf087e8279ec8d66e9"
 };
 
 // The application shell files that are downloaded before a service worker can
