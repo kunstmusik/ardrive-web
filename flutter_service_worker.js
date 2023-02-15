@@ -11,7 +11,7 @@ const RESOURCES = {
 "sqlite3.wasm": "fbf9815a14460df0b4ee8b746ae9b95b",
 "main.dart.js": "138297d0bf82c0d371ed0a6a0b79ffc1",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
-"ardrive-http.js": "af25877f52aee9ad7c24422efc556091",
+"ardrive-http.js": "f6eb54815bfaf87eef26cd9abdac53aa",
 "favicon.png": "167c77d2168cfdb31c240d2d3d5e9601",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
