@@ -17,7 +17,7 @@ const RESOURCES = {
 "canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
 "canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
 "flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
-"ardrive-http.js": "f6eb54815bfaf87eef26cd9abdac53aa",
+"ardrive-http.js": "6a3b75804a6e1b4a76e09cc3df70c32c",
 "assets/shaders/ink_sparkle.frag": "83c076d55fdbf5e6f73f29c79926992c",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "0266ef445553f45f6e45344556cfd6fd",
@@ -41,12 +41,12 @@ const RESOURCES = {
 "assets/assets/fonts/Montserrat-Light.ttf": "409c7f79a42e56c785f50ed37535f0be",
 "assets/assets/fonts/Montserrat-Regular.ttf": "ee6539921d713482b8ccd4d0d23961bb",
 "assets/assets/fonts/OpenSans-Bold.ttf": "1025a6e0fb0fa86f17f57cc82a6b9756",
-"assets/NOTICES": "8edc47b31e11d6b00bc36f07900bf20b",
+"assets/NOTICES": "c44249f080d1eeb6c49636e83a551efc",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/AssetManifest.json": "f5033e81ecc8a17dcde4617b104dace3",
 "index.html": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "/": "293ba1fe4aaf594c2f13ad183e16e1ac",
-"main.dart.js": "8dcd69489255f86bf1df88effc223a29",
+"main.dart.js": "cffc8ee0d7791f87a159024506fb2b1f",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e"
 };
