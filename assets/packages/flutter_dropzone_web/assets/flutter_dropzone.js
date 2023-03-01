@@ -1,6 +1,7 @@
 if (typeof FlutterDropzone === 'undefined') {
 class FlutterDropzone {
   constructor(container, onLoaded, onError, onHover, onDrop, onDropMultiple, onLeave) {
+    this.onError = onError;
     this.onHover = onHover;
     this.onDrop = onDrop;
     this.onDropMultiple = onDropMultiple;
@@ -16,6 +17,7 @@ class FlutterDropzone {
   }
 
   updateHandlers(onLoaded, onError, onHover, onDrop, onDropMultiple, onLeave) {
+    this.onError = onError;
     this.onHover = onHover;
     this.onDrop = onDrop;
     this.onDropMultiple = onDropMultiple;
@@ -39,27 +41,50 @@ class FlutterDropzone {
     event.preventDefault();
 
     var files = [];
+    var strings = [];
     if (event.dataTransfer.items) {
       for (var i = 0; i < event.dataTransfer.items.length; i++) {
         var item = event.dataTransfer.items[i];
-        var match = (item.kind === 'file');
-        if (this.dropMIME != null && !this.dropMIME.includes(item.type))
-          match = false;
+        switch (item.kind) {
+          case "file":
+            if (this.dropMIME == null || this.dropMIME.includes(item.type)) {
+              var file = item.getAsFile();
+              var fileEntry = item.webkitGetAsEntry();
+              var source = "unknown";
+              if (fileEntry.isFile) {
+                source = "file";
+              } else if (fileEntry.isDirectory) {
+                source = "folder";
+              }
+              if (this.onDrop != null) this.onDrop(event, file, source);
+              files.push(file);
+            }
+            break;
 
-        if (match) {
-          var file = event.dataTransfer.items[i].getAsFile();
-          if (this.onDrop != null) this.onDrop(event, file);
-          files.push(file);
+          case "string":
+            const that = this;
+            item.getAsString(function (text) {
+              if (that.onDrop != null) that.onDrop(event, text, "string");
+              strings.push(text);
+            });
+            break;
+
+          default:
+            if (this.onError != null) this.onError("Wrong type: ${item.kind}");
+            break;
         }
       }
     } else {
       for (var i = 0; i < ev.dataTransfer.files.length; i++)
         var file = event.dataTransfer.files[i];
-        if (this.onDrop != null) this.onDrop(event, file);
+        if (this.onDrop != null) this.onDrop(event, file, "files");
         files.push(file);
     }
 
-    if (this.onDropMultiple != null && files.length > 0) this.onDropMultiple(event, files);
+    if (this.onDropMultiple != null) {
+      if (files.length > 0) this.onDropMultiple(event, files);
+      if (strings.length > 0) this.onDropMultiple(event, strings);
+    }
   }
 
   setMIME(mime) {
