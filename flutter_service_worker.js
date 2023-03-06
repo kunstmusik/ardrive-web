@@ -10,7 +10,7 @@ const RESOURCES = {
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "sqlite3.wasm": "fbf9815a14460df0b4ee8b746ae9b95b",
-"version.json": "c16c7761b393c86e61d615b4a2ae1f20",
+"version.json": "23c1b915d748b51418c078f5dbef1b2a",
 "worker.js": "f916974921b8b3d98f9fdfc4b68e5432",
 "canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
 "canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
