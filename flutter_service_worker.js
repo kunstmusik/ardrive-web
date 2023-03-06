@@ -46,7 +46,7 @@ const RESOURCES = {
 "assets/AssetManifest.json": "f5033e81ecc8a17dcde4617b104dace3",
 "index.html": "293ba1fe4aaf594c2f13ad183e16e1ac",
 "/": "293ba1fe4aaf594c2f13ad183e16e1ac",
-"main.dart.js": "cd173551a65174e6a753a9a897c01cfb",
+"main.dart.js": "cae6bdc27fdedc5a7f3f602cb7bd68cb",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e"
 };
