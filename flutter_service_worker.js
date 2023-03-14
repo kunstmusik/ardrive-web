@@ -34,7 +34,7 @@ const RESOURCES = {
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "ba1ea8616ef82d6917b823ecb236a4ea",
 "assets/shaders/ink_sparkle.frag": "83c076d55fdbf5e6f73f29c79926992c",
 "assets/AssetManifest.json": "f5033e81ecc8a17dcde4617b104dace3",
-"main.dart.js": "4325a717a8543df8b6eb3e5c8553af2f",
+"main.dart.js": "91a00326cfa2e8d8f483383cd4ab82a0",
 "sqlite3.wasm": "fbf9815a14460df0b4ee8b746ae9b95b",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",

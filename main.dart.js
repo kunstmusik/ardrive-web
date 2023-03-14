@@ -69077,7 +69077,7 @@ A.aMc.prototype={
 $0(){return this.a.Ir(this.b)},
 $S:0}
 A.aMd.prototype={
-$0(){return A.j8("https://tokens.arweave.org",null)},
+$0(){return A.j8("https://arconnect.io",null)},
 $S:0}
 A.aM8.prototype={
 $1(a){var s=null,r=A.r(a).gLW()
