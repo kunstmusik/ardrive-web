@@ -61718,8 +61718,9 @@ return}}A.mt(B.fP,t.z).Z(0,new A.aUW(r),t.P)},
 a8K(){this.x.lW().Z(0,new A.aUZ(this),t.P)},
 Em(){var s=0,r=A.k(t.H),q,p=this,o,n
 var $async$Em=A.f(function(a,b){if(a===1)return A.h(b,r)
-while(true)switch(s){case 0:o=window.document
-n=(o.visibilityState||o.mozVisibilityState||o.msVisibilityState||o.webkitVisibilityState)==="visible"
+while(true)switch(s){case 0:o=self.isDocumentFocused()
+A.ay("[ArConnect SYNC] isTabFocused: "+A.l(o))
+n=o
 if(n){s=3
 break}else b=n
 s=4

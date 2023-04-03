@@ -18,6 +18,7 @@
     <title>ArDrive</title>
     <link rel="manifest" href="manifest.json" />
     <script defer src="js/arconnect.js"></script>
+    <script defer src="js/is_document_focused.js"></script>
 
     <!-- Plausible Web Analytics -->
     <script defer data-domain="app.ardrive.io" src="https://plausible.io/js/plausible.js"></script>
@@ -28,13 +29,13 @@
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", function () {
-                navigator.serviceWorker.register("flutter_service_worker.js?version=5b5c7f8a538bcd12eacb26fdc040f7be8fad942a");
+                navigator.serviceWorker.register("flutter_service_worker.js?version=4d2b35749547b6418212856319e963f06beb885f");
             });
         }
     </script>
     <script defer src="js/pst.min.js"></script>
     <script defer src="js/sql-wasm.js"></script>
-    <script src="main.dart.js?version=5b5c7f8a538bcd12eacb26fdc040f7be8fad942a" type="application/javascript"></script>
+    <script src="main.dart.js?version=4d2b35749547b6418212856319e963f06beb885f" type="application/javascript"></script>
 
 </body>
 
