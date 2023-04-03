@@ -12,7 +12,7 @@ const RESOURCES = {
 "canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
 "favicon.png": "167c77d2168cfdb31c240d2d3d5e9601",
 "sql-wasm.wasm": "8b3b3fe7c9c611db53b9e43661bf38dd",
-"version.json": "3d6a8f082f2a39683630ae2e6e84c82b",
+"version.json": "5672c0be4ea950aca0e464384c1ef159",
 "sqlite3.wasm": "fbf9815a14460df0b4ee8b746ae9b95b",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "assets/AssetManifest.json": "f5033e81ecc8a17dcde4617b104dace3",
