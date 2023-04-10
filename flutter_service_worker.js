@@ -21,7 +21,7 @@ const RESOURCES = {
 "sqlite3.wasm": "fbf9815a14460df0b4ee8b746ae9b95b",
 "flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "favicon.png": "167c77d2168cfdb31c240d2d3d5e9601",
-"version.json": "5672c0be4ea950aca0e464384c1ef159",
+"version.json": "7ca953eec15a7005765dbad070976edb",
 "ardrive-http.js": "6a3b75804a6e1b4a76e09cc3df70c32c",
 "assets/shaders/ink_sparkle.frag": "83c076d55fdbf5e6f73f29c79926992c",
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "ba1ea8616ef82d6917b823ecb236a4ea",
