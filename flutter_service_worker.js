@@ -14,7 +14,7 @@ const RESOURCES = {
 "js/pst.min.js": "353b22b2121953178e78dfe6bce00b6d",
 "js/sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
 "worker.js": "f916974921b8b3d98f9fdfc4b68e5432",
-"main.dart.js": "88a4d1533034239dc5650dfd087812b6",
+"main.dart.js": "87feb212a48895ab9e08e69cd3e74fdc",
 "icons/Icon-512.png": "92dc660f505d120ed1d92db8ec74943d",
 "icons/Icon-192.png": "59fd8ea25636b975179f03f82cc7b19e",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
