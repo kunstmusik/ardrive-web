@@ -29,7 +29,7 @@ const RESOURCES = {
 "assets/AssetManifest.json": "1e023e690127db290a10a5cd35b0e47e",
 "assets/packages/flutter_dropzone_web/assets/flutter_dropzone.js": "ba1ea8616ef82d6917b823ecb236a4ea",
 "assets/shaders/ink_sparkle.frag": "83c076d55fdbf5e6f73f29c79926992c",
-"main.dart.js": "48d5db93195fdb1a7d947f389f240349",
+"main.dart.js": "87b6415fc0a8ee8d35aaec6c393e5ea7",
 "flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "js/arconnect.js": "fcf3565603d187e5050b091f013c4d45",
 "js/sql-wasm.js": "88a2d15fe24a12bed48ade5c89689065",
